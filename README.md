@@ -17,12 +17,8 @@ joint `txt.adulta*` then use `grab_build.sh` in [this repo](https://github.com/n
 you will get domain list in BIND9-rpz format in 5 catagories AND 7 sub-categories of adult category. Enjoy it's
 
 ### license
-[![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
-
-This work is licensed under a
-[Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
-
-[![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
+- [x] [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
+- [x] This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
 
 [cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
 [cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
