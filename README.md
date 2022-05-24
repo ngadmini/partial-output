@@ -12,6 +12,7 @@
 joint `txt.adulta*` then use `grab_build.sh` in [this repo](https://github.com/ngadmini/Grabbing-Blacklist-for-Bind9-RPZ)
 ```
 ~$ cat txt.adulta* > txt.adult
+~$ cat txt.trust+a* > txt.trust+
 ~$ ./grab_build.sh
 ```
 you will get domain list in BIND9-rpz format in 5 catagories AND 7 sub-categories of adult category. Enjoy it's
