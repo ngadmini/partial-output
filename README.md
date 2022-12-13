@@ -9,7 +9,7 @@
 </p>
 
 ### usage
-joint `txt.adulta*` then use `grab_build.sh` in [this repo](https://github.com/ngadmini/Grabbing-Blacklist-for-Bind9-RPZ)
+joint `txt.adulta*` then use `grab_build.sh` in [this repo](https://github.com/ngadmini/Grabbing-Blacklist-for-Bind9-RPZ/blob/master/libs/grab_build.sh)
 ```
 ~$ cat txt.adulta* > txt.adult
 ~$ ./grab_build.sh
