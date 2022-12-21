@@ -11,8 +11,13 @@
 ### usage
 joint `txt.adulta*` then use `grab_build.sh` in [this repo](https://github.com/ngadmini/Grabbing-Blacklist-for-Bind9-RPZ/blob/master/libs/grab_build.sh)
 ```
-~$ cat txt.adulta* > txt.adult
-~$ ./grab_build.sh
+~$ curl -s -o rpz_db.zip https://codeload.github.com/ngadmini/partial-output/zip/refs/heads/master
+~$ curl -s -o "partial-output-master/grab_build.sh" https://raw.githubusercontent.com/ngadmini/Grabbing-Blacklist-for-Bind9-RPZ/master/libs/grab_build.sh
+~$ curl -s -o "partial-output-master/grab_library" https://raw.githubusercontent.com/ngadmini/Grabbing-Blacklist-for-Bind9-RPZ/master/libs/grab_library
+~$ unzip rpz_db.zip -x partial-output-master/{LICENSE,README.md,.gitignore}
+~$ cat partial-output-master/txt.adulta* > partial-output-master/txt.adult
+~$ rm partial-output-master/txt.adulta*
+~$ bash partial-output-master/grab_build.sh
 ```
 you will get domain list in BIND9-rpz format in 5 catagories AND 7 sub-categories of adult category. Enjoy it's
 
