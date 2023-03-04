@@ -17,7 +17,7 @@
 concatenate `txt.adulta*`, then use `grab_build.sh` in [this repo](https://github.com/ngadmini/Grabbing-Blacklist-for-Bind9-RPZ/blob/master/libs/grab_build.sh)
 ```shell
 ~$ grab_build="https://raw.githubusercontent.com/ngadmini/Grabbing-Blacklist-for-Bind9-RPZ/master/libs/grab_build.sh"
-~# grab_libs="https://raw.githubusercontent.com/ngadmini/Grabbing-Blacklist-for-Bind9-RPZ/master/libs/grab_library"
+~$ grab_libs="https://raw.githubusercontent.com/ngadmini/Grabbing-Blacklist-for-Bind9-RPZ/master/libs/grab_library"
 ~$ curl -s -o "partial-output-master/grab_build.sh" "${grab_build}"
 ~$ curl -s -o "partial-output-master/grab_library" "${grab_libs}"
 ~$ curl -s -o rpz_db.zip https://codeload.github.com/ngadmini/partial-output/zip/refs/heads/master
