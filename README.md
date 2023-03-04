@@ -11,7 +11,7 @@
 ### featuring
 - [x] free from duplicate entries and sub-domains entries (if it's parent-domain exist) across categories
 - [x] free from invalid TLDs and domain entries that construct with international characters (non ASCII)
-- [x] ip-address write in CIDR block
+- [x] ip-address is written in CIDR block
 
 ### usage
 concatenate `txt.adulta*`, then use `grab_build.sh` in [this repo](https://github.com/ngadmini/Grabbing-Blacklist-for-Bind9-RPZ/blob/master/libs/grab_build.sh)
