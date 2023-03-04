@@ -8,12 +8,19 @@
   <a href="#"><img src="http://s.4cdn.org/image/title/105.gif"></a>
 </p>
 
+### featuring
+- [x] free from duplicate entries and sub-domains entries (if it's parent-domain exist) across categories
+- [x] free from invalid TLDs and domain entries that construct with international characters (non ASCII)
+- [x] ip-address write in CIDR block
+
 ### usage
-joint `txt.adulta*` then use `grab_build.sh` in [this repo](https://github.com/ngadmini/Grabbing-Blacklist-for-Bind9-RPZ/blob/master/libs/grab_build.sh)
-```
+concatenate `txt.adulta*`, then use `grab_build.sh` in [this repo](https://github.com/ngadmini/Grabbing-Blacklist-for-Bind9-RPZ/blob/master/libs/grab_build.sh)
+```shell
+~$ grab_build="https://raw.githubusercontent.com/ngadmini/Grabbing-Blacklist-for-Bind9-RPZ/master/libs/grab_build.sh"
+~# grab_libs="https://raw.githubusercontent.com/ngadmini/Grabbing-Blacklist-for-Bind9-RPZ/master/libs/grab_library"
+~$ curl -s -o "partial-output-master/grab_build.sh" "${grab_build}"
+~$ curl -s -o "partial-output-master/grab_library" "${grab_libs}"
 ~$ curl -s -o rpz_db.zip https://codeload.github.com/ngadmini/partial-output/zip/refs/heads/master
-~$ curl -s -o "partial-output-master/grab_build.sh" https://raw.githubusercontent.com/ngadmini/Grabbing-Blacklist-for-Bind9-RPZ/master/libs/grab_build.sh
-~$ curl -s -o "partial-output-master/grab_library" https://raw.githubusercontent.com/ngadmini/Grabbing-Blacklist-for-Bind9-RPZ/master/libs/grab_library
 ~$ unzip rpz_db.zip -x partial-output-master/{LICENSE,README.md,.gitignore}
 ~$ cat partial-output-master/txt.adulta* > partial-output-master/txt.adult
 ~$ rm partial-output-master/txt.adulta*
