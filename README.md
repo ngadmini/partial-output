@@ -25,7 +25,7 @@ concatenate `txt.adulta*`, then use `grab_build.sh` in [this repo](https://githu
 ~$ cat partial-output-master/txt.adulta* > partial-output-master/txt.adult
 ~$ rm partial-output-master/txt.adulta*
 ~$ bash partial-output-master/grab_build.sh
-~$ unset -v grab_build grab_lib
+~$ unset -v grab_build grab_libs
 ```
 you will get domain list in BIND9-rpz format in 5 catagories AND 7 sub-categories of adult category. Enjoy it's
 
