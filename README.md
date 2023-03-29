@@ -18,13 +18,14 @@ concatenate `txt.adulta*`, then use `grab_build.sh` in [this repo](https://githu
 ```shell
 ~$ grab_build="https://raw.githubusercontent.com/ngadmini/Grabbing-Blacklist-for-Bind9-RPZ/master/libs/grab_build.sh"
 ~$ grab_libs="https://raw.githubusercontent.com/ngadmini/Grabbing-Blacklist-for-Bind9-RPZ/master/libs/grab_library"
-~$ curl -s -o "partial-output-master/grab_build.sh" "${grab_build}"
-~$ curl -s -o "partial-output-master/grab_library" "${grab_libs}"
 ~$ curl -s -o rpz_db.zip https://codeload.github.com/ngadmini/partial-output/zip/refs/heads/master
 ~$ unzip rpz_db.zip -x partial-output-master/{LICENSE,README.md,.gitignore}
+~$ curl -s -o "partial-output-master/grab_build.sh" "${grab_build}"
+~$ curl -s -o "partial-output-master/grab_library" "${grab_libs}"
 ~$ cat partial-output-master/txt.adulta* > partial-output-master/txt.adult
 ~$ rm partial-output-master/txt.adulta*
 ~$ bash partial-output-master/grab_build.sh
+~$ unset -v grab_build grab_lib
 ```
 you will get domain list in BIND9-rpz format in 5 catagories AND 7 sub-categories of adult category. Enjoy it's
 
