@@ -14,7 +14,7 @@
 - [x] ip-address is written in CIDR block
 
 ### usage
-concatenate `txt.adulta*`, then use `grab_build.sh` in [this repo](https://github.com/ngadmini/Grabbing-Blacklist-for-Bind9-RPZ/blob/master/libs/grab_build.sh)
+concatenate `txt.adulta* and txt.trust+a*`, then use `grab_build.sh` in [this repo](https://github.com/ngadmini/Grabbing-Blacklist-for-Bind9-RPZ/blob/master/libs/grab_build.sh)
 ```shell
 ~$ grab_build="https://raw.githubusercontent.com/ngadmini/Grabbing-Blacklist-for-Bind9-RPZ/master/libs/grab_build.sh"
 ~$ grab_libs="https://raw.githubusercontent.com/ngadmini/Grabbing-Blacklist-for-Bind9-RPZ/master/libs/grab_library"
@@ -23,7 +23,8 @@ concatenate `txt.adulta*`, then use `grab_build.sh` in [this repo](https://githu
 ~$ curl -s -o "partial-output-master/grab_build.sh" "${grab_build}"
 ~$ curl -s -o "partial-output-master/grab_library" "${grab_libs}"
 ~$ cat partial-output-master/txt.adulta* > partial-output-master/txt.adult
-~$ rm partial-output-master/txt.adulta*
+~$ cat partial-output-master/txt.trust+a* > partial-output-master/txt.trust+
+~$ rm partial-output-master/txt.{adulta,trust+a}*
 ~$ bash partial-output-master/grab_build.sh
 ~$ unset -v grab_build grab_libs
 ```
