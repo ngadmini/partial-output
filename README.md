@@ -29,7 +29,10 @@ concatenate `txt.adulta* and txt.trust+a*`, then use `grab_build.sh` in [this re
 ~$ unset -v grab_build grab_libs
 ```
 you will get domain list in BIND9-rpz format in 5 catagories (7 sub-categories of adult category AND 2 sub-categories of trust+). enjoy it's
-
+### Renaming CNAME Targer 
+```
+sed 's/CNAME\ ./IN CNAME\ @/g' db.trust+ab > db.trust+ab.rpz
+```
 ### license
 - [x] [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
 - [x] this work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
