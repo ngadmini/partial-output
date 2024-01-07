@@ -28,7 +28,7 @@ concatenate `txt.adulta* and txt.trust+a*`, then use `grab_build.sh` in [this re
 ~$ bash partial-output-master/grab_build.sh
 ~$ unset -v grab_build grab_libs
 ```
-you will get domain list in BIND9-rpz format in 5 catagories (7 sub-categories of adult category AND 2 sub-categories of trust+). enjoy it's
+you will get domain list in BIND9-rpz format in 5 catagories (7 sub-categories of adult category AND 3 sub-categories of trust+). enjoy it's
 
 ### license
 - [x] [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
